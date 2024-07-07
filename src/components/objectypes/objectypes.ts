@@ -13,8 +13,18 @@ interface Car{
     brand:string
     model:string
     year?:number
+    color:string[]
     readonly price:number
 }
+
+let car:Car ={
+    brand:'BMW',
+    model:'X5',
+    color:['red','blue','green'],
+    price:50000
+}
+// cannot modify the readonly 
+// car.price = 56565  
 
 //Nested Objects
 interface Address{
